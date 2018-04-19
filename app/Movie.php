@@ -17,7 +17,7 @@ class Movie extends Model
   }
 
   public function getRating(){
-    return $this->grade->rating;
+      return $this->grade->rating;
   }
 
 }

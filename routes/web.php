@@ -11,9 +11,9 @@
 |
 */
 
-$app->get('/', function () use ($app) {
-    return $app->version();
+$router->get('/', function () {
+    return "Hello World!";
 });
 
-$app->get('movies', 'MoviesController@index');
-$app->get('movies/{id}', 'MoviesController@show');
+$router->get('movies', 'MoviesController@index');
+$router->get('movies/{id}', 'MoviesController@show');
